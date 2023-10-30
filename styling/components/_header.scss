@@ -1,0 +1,11 @@
+header{
+    display: flex;
+    position: relative;
+    top: 10rem;
+
+    #logo{
+        width: 4.8rem;
+        height: 4.8rem;
+        flex-shrink: 0;
+    }
+}
