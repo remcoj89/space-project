@@ -6,10 +6,10 @@
 2. installing npm x
 3. installing sass x
 4. create sass folder structure x
-5. create image folder x
-6. import images 
-7. import font from Google fonts.
-8. reset the basic css, create variables and mixins
+5. create assets folder x
+6. import images x
+7. import font from Google fonts. x
+8. reset the basic css, create variables and mixins x
 9. psudo code the html structure for desktop
 9. psudo code the html structure for mobile
 10.1 create the desktop nav-Bar
@@ -47,7 +47,7 @@
  font-size: 32px
 
  heading-5
- font-familiy: arlow Condensed Regular
+ font-familiy: Barlow Condensed Regular
  font-size: 28px
  letter-spacing: 4.75
 
