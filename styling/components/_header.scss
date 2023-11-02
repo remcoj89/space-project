@@ -42,20 +42,29 @@ header{
             width: 100%;
             display: flex;
             justify-content: space-evenly;
-            align-items: center ;
             list-style: none;
 
             .nav-item{
-            &__link{
-                @include theme($theme: NavText);
-                text-decoration: none;
-                text-transform: uppercase;
-
-                &--number{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &__link{
                     @include theme($theme: NavText);
-                    font-weight: bold;
-                    margin-right: 1.6rem;
-                }    
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    
+                    
+                    &--number{
+                        @include theme($theme: NavText);
+                        font-weight: bold;
+                        margin-right: 1.6rem;
+                    }    
+                }
+            &:hover{
+                border-bottom: solid 2px rgba(255, 255, 255, 0.50);
+            }
+            &:active{
+                border-bottom: solid 2px rgba(255, 255, 255, 100%);
             }
         }
         }
