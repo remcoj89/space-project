@@ -1,46 +1,47 @@
-@mixin theme($theme: Heading-1) {
+
+@mixin Heading-1 {
     font-family: $BellefairFont;
+    font-weight: 400;
     font-size: 15rem;
     line-height: normal;
-    color: $white;
 }
-@mixin theme($theme: Heading-2) {
+@mixin Heading-2 {
     font-family: $BellefairFont;
     font-size: 10rem;
 }
-@mixin theme($theme: Heading-3) {
+@mixin Heading-3 {
     font-family: $BellefairFont;
     font-size: 5.6rem;
 }
-@mixin theme($theme: Heading-4) {
+@mixin Heading-4 {
     font-family: $BellefairFont;
     font-size: 3.2rem;
 }
-@mixin theme($theme: Heading-5) {
+@mixin Heading-5 {
     font-family: $BarlowFont;
     font-size: 2.8rem;
     letter-spacing: 4.75;
 }
-@mixin theme($theme: Subheading-1) {
+@mixin Subheading-1 {
     font-family: $BellefairFont;
     font-size: 2.8rem;
     letter-spacing: 4.75;
     color: $lightblue;
     line-height: normal;
 }
-@mixin theme($theme: Subheading-2) {
+@mixin Subheading-2 {
     font-family: $BarlowFont;
     font-size: 1.4rem;
     letter-spacing: 2.35;
 }
-@mixin theme($theme: NavText) {
+@mixin NavText {
     font-family: $BarlowFont;
     font-size: 1.6rem;
     letter-spacing: 2.7;
     color: $white;
     line-height: normal;
 }
-@mixin theme($theme: Bodytext) {
+@mixin Bodytext {
     font-family: $BarlowFont;
     font-size: 1.8rem;
     letter-spacing: 2.7;

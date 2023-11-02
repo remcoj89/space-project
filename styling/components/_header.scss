@@ -49,13 +49,13 @@ header{
                 display: flex;
                 align-items: center;
                 &__link{
-                    @include theme($theme: NavText);
+                    @include NavText;
                     text-decoration: none;
                     text-transform: uppercase;
                     
                     
                     &--number{
-                        @include theme($theme: NavText);
+                        @include NavText;
                         font-weight: bold;
                         margin-right: 1.6rem;
                     }    

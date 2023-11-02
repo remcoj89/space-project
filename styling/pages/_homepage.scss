@@ -4,4 +4,37 @@ main {
     background-image: url(../../assets/home/background-home-desktop.jpg);
     background-size: cover;
     position: absolute;
+    
+}
+
+.container{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    &__left{
+        width: 50%;
+        // height: 50vh;
+
+        .heading-3{
+            @include  Heading-3;
+            color: $white;
+        }
+        .heading-1{
+            @include Heading-1;
+            color: $white;
+        }
+        .body-text {
+            @include Bodytext;
+            color: $white;
+        }
+    }
+    &__right{
+        width: 50%;
+        height: 50vh;
+    }
 }

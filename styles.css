@@ -54,18 +54,18 @@ header {
         align-items: center; }
         header .nav-bar__right .nav-list .nav-item__link {
           font-family: "Barlow Condensed", sans-serif;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           letter-spacing: 2.7;
-          line-height: 3.2rem;
-          color: #d0d6f9;
+          color: white;
+          line-height: normal;
           text-decoration: none;
           text-transform: uppercase; }
           header .nav-bar__right .nav-list .nav-item__link--number {
             font-family: "Barlow Condensed", sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             letter-spacing: 2.7;
-            line-height: 3.2rem;
-            color: #d0d6f9;
+            color: white;
+            line-height: normal;
             font-weight: bold;
             margin-right: 1.6rem; }
         header .nav-bar__right .nav-list .nav-item:hover {
@@ -79,3 +79,34 @@ main {
   background-image: url(../../assets/home/background-home-desktop.jpg);
   background-size: cover;
   position: absolute; }
+
+.container {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 80%;
+  margin: 0 auto; }
+  .container__left {
+    width: 50%; }
+    .container__left .heading-3 {
+      font-family: "Bellefair", serif;
+      font-size: 5.6rem;
+      color: white; }
+    .container__left .heading-1 {
+      font-family: "Bellefair", serif;
+      font-weight: 400;
+      font-size: 15rem;
+      line-height: normal;
+      color: white; }
+    .container__left .body-text {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 2.7;
+      line-height: 3.2rem;
+      color: #d0d6f9;
+      color: white; }
+  .container__right {
+    width: 50%;
+    height: 50vh; }
