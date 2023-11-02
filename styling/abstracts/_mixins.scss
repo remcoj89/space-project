@@ -33,7 +33,7 @@
     font-size: 1.4rem;
     letter-spacing: 2.35;
 }
-@mixin theme($theme: Navtext) {
+@mixin theme($theme: NavText) {
     font-family: $BarlowFont;
     font-size: 1.6rem;
     letter-spacing: 2.7;

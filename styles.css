@@ -15,12 +15,56 @@ body {
 
 header {
   display: flex;
+  align-items: center;
   position: relative;
-  top: 10rem; }
-  header #logo {
-    width: 4.8rem;
-    height: 4.8rem;
-    flex-shrink: 0; }
+  top: 5%;
+  width: 100%; }
+  header .nav-bar__left {
+    width: 45%;
+    display: flex;
+    align-items: center; }
+    header .nav-bar__left #logo {
+      width: 4.8rem;
+      height: 4.8rem;
+      flex-shrink: 0;
+      margin: 0 5%; }
+    header .nav-bar__left .line {
+      width: 35%;
+      height: 1px;
+      flex-shrink: 0;
+      position: absolute;
+      left: 10rem;
+      z-index: 2; }
+  header .nav-bar__right {
+    width: 60%;
+    height: 96px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.77423px);
+    display: flex;
+    justify-content: space-evenly; }
+    header .nav-bar__right .nav-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none; }
+      header .nav-bar__right .nav-list .nav-item__link {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: 2.7;
+        line-height: 3.2rem;
+        color: #d0d6f9;
+        text-decoration: none;
+        text-transform: uppercase; }
+        header .nav-bar__right .nav-list .nav-item__link--number {
+          font-family: "Barlow Condensed", sans-serif;
+          font-size: 1.8rem;
+          letter-spacing: 2.7;
+          line-height: 3.2rem;
+          color: #d0d6f9;
+          font-weight: bold;
+          margin-right: 1.6rem; }
 
 main {
   width: 100%;
