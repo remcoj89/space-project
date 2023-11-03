@@ -26,9 +26,7 @@ header{
             z-index: 2;
         }
     }
-    
-    
-
+     
     .nav-bar__right{
         width: 60%;
         height: 96px;
@@ -68,5 +66,8 @@ header{
             }
         }
         }
+    }
+    .active{
+        border-bottom: solid 3px white;
     }
 }

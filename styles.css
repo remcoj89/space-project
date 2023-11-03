@@ -72,6 +72,8 @@ header {
           border-bottom: solid 2px rgba(255, 255, 255, 0.5); }
         header .nav-bar__right .nav-list .nav-item:active {
           border-bottom: solid 2px white; }
+  header .active {
+    border-bottom: solid 3px white; }
 
 main {
   width: 100%;
