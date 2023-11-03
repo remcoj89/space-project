@@ -13,6 +13,20 @@ body {
   background: #0B0D17;
   box-sizing: border-box; }
 
+.explore-button {
+  cursor: pointer;
+  width: 27.4rem;
+  height: 27.4rem;
+  flex-shrink: 0;
+  border-radius: 274px;
+  background: #FFF;
+  border: none;
+  font-family: "Bellefair", serif;
+  font-size: 3.2rem; }
+  .explore-button:hover {
+    box-shadow: 10px #888888;
+    scale: 2; }
+
 header {
   display: flex;
   align-items: center;
@@ -111,4 +125,7 @@ main {
       color: white; }
   .container__right {
     width: 50%;
-    height: 50vh; }
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
