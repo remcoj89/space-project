@@ -13,19 +13,34 @@ body {
   background: #0B0D17;
   box-sizing: border-box; }
 
-.explore-button {
+.btn {
   cursor: pointer;
+  text-transform: uppercase;
+  position: relative; }
+
+.btn-white {
   width: 27.4rem;
   height: 27.4rem;
   flex-shrink: 0;
-  border-radius: 274px;
-  background: #FFF;
+  border-radius: 100%;
   border: none;
+  background-color: #FFF;
   font-family: "Bellefair", serif;
   font-size: 3.2rem; }
-  .explore-button:hover {
-    box-shadow: 10px #888888;
-    scale: 2; }
+  .btn-white::after {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: #979797;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .btn-white:hover::after {
+    transform: scale(1.5);
+    transition: ease-in-out .4s;
+    opacity: 0.3; }
 
 header {
   display: flex;
@@ -94,7 +109,8 @@ main {
   height: 100vh;
   background-image: url(../../assets/home/background-home-desktop.jpg);
   background-size: cover;
-  position: absolute; }
+  position: absolute;
+  z-index: -2; }
 
 .container {
   position: absolute;

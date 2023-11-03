@@ -1,15 +1,33 @@
-.explore-button {
-    cursor: pointer;
-    width: 27.4rem;
-    height: 27.4rem;
-    flex-shrink: 0;
-    border-radius: 274px;
-    background: #FFF; 
-    border: none;
-    @include Heading-4;
+.btn{
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
 
-    &:hover{
-        box-shadow: 10px #888888;
-        scale: 2;
+.btn-white {
+  width: 27.4rem;
+  height: 27.4rem;
+  flex-shrink: 0;
+  border-radius: 100%;
+  border: none;
+  background-color: #FFF;
+  @include Heading-4;
+
+  &::after{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(151, 151, 151, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: scale(1.5);
+    transition: ease-in-out .4s;
+    opacity: 0.3;
     }
 }
