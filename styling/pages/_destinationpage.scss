@@ -10,7 +10,10 @@
 
 &__left{
     width: 50%;
-    height: 60vh;
+    height :60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &--title{
       @include Subheading-1;
@@ -24,11 +27,11 @@
     }
 
   &--image{
-    display: block;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    .dest-image{
-      height: 40%;
+    align-content: bottom;
+
+    .dest-image {
       width: 50%;
     }
   }
@@ -37,6 +40,7 @@
   }
   &__right{
     width: 50%;
+
     .heading-3{
     @include  Heading-3;
     color: $white;

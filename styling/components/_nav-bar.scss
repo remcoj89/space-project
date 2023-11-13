@@ -38,7 +38,7 @@ border-bottom: solid 3px white;
 .destination-nav-bar {
     height: 3rem;
 
-    button {
+    .destination-btn {
         border: none;
         background: none;
         @include NavText;
@@ -54,4 +54,8 @@ border-bottom: solid 3px white;
         }
     }
 
+    .btn-active {
+        opacity: 1;
+    }
+    
 }
