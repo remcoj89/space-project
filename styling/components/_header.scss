@@ -35,39 +35,5 @@ header{
         backdrop-filter: blur(40.774227142333984px);
         display: flex;
         justify-content: space-evenly;
-
-        .nav-list{
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            list-style: none;
-
-            .nav-item{
-                height: 100%;
-                display: flex;
-                align-items: center;
-                &__link{
-                    @include NavText;
-                    text-decoration: none;
-                    text-transform: uppercase;
-
-
-                    &--number{
-                        @include NavText;
-                        font-weight: bold;
-                        margin-right: 1.6rem;
-                    }
-                }
-            &:hover{
-                border-bottom: solid 2px rgba(255, 255, 255, 0.50);
-            }
-            &:active{
-                border-bottom: solid 2px rgba(255, 255, 255, 100%);
-            }
-        }
-        }
-    }
-    .active{
-        border-bottom: solid 3px white;
     }
 }

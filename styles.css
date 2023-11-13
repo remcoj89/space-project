@@ -74,37 +74,58 @@ header {
     backdrop-filter: blur(40.77423px);
     display: flex;
     justify-content: space-evenly; }
-    header .nav-bar__right .nav-list {
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      list-style: none; }
-      header .nav-bar__right .nav-list .nav-item {
-        height: 100%;
-        display: flex;
-        align-items: center; }
-        header .nav-bar__right .nav-list .nav-item__link {
-          font-family: "Barlow Condensed", sans-serif;
-          font-size: 1.6rem;
-          letter-spacing: 2.7;
-          color: white;
-          line-height: normal;
-          text-decoration: none;
-          text-transform: uppercase; }
-          header .nav-bar__right .nav-list .nav-item__link--number {
-            font-family: "Barlow Condensed", sans-serif;
-            font-size: 1.6rem;
-            letter-spacing: 2.7;
-            color: white;
-            line-height: normal;
-            font-weight: bold;
-            margin-right: 1.6rem; }
-        header .nav-bar__right .nav-list .nav-item:hover {
-          border-bottom: solid 2px rgba(255, 255, 255, 0.5); }
-        header .nav-bar__right .nav-list .nav-item:active {
-          border-bottom: solid 2px white; }
-  header .active {
-    border-bottom: solid 3px white; }
+
+.nav-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none; }
+  .nav-list .nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .nav-list .nav-item__link {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 2.7;
+      color: white;
+      line-height: normal;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .nav-list .nav-item__link--number {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.6rem;
+        letter-spacing: 2.7;
+        color: white;
+        line-height: normal;
+        font-weight: bold;
+        margin-right: 1.6rem; }
+    .nav-list .nav-item:hover {
+      border-bottom: solid 2px rgba(255, 255, 255, 0.5); }
+    .nav-list .nav-item:active {
+      border-bottom: solid 2px white; }
+
+.active {
+  border-bottom: solid 3px white; }
+
+.destination-nav-bar {
+  height: 3rem; }
+  .destination-nav-bar button {
+    border: none;
+    background: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2.7;
+    color: white;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .5; }
+    .destination-nav-bar button:hover {
+      opacity: 1; }
+    .destination-nav-bar button:after {
+      opacity: 1; }
 
 #dest-body {
   background-image: url("../../assets/destination/background-destination-desktop.jpg"); }
@@ -117,6 +138,21 @@ header {
   .destination-container__left {
     width: 50%;
     height: 60vh; }
+    .destination-container__left--title {
+      font-family: "Bellefair", serif;
+      font-size: 2.8rem;
+      letter-spacing: 4.75;
+      color: #d0d6f9;
+      line-height: normal; }
+    .destination-container__left--number {
+      font-family: "Bellefair", serif;
+      font-size: 2.8rem;
+      letter-spacing: 4.75;
+      color: #d0d6f9;
+      line-height: normal;
+      font-weight: bold;
+      margin-right: 1.6rem;
+      color: rgba(255, 255, 255, 0.445); }
     .destination-container__left--image {
       display: block;
       justify-content: center;

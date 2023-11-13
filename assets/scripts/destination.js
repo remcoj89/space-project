@@ -1,24 +1,68 @@
 // Selectors
 const mainDestination = document.getElementById('main-destination');
 const destHeader1 = document.getElementById("destination-heading-1");
-const destNavTitle = document.querySelector(".destination-container__left--title")
-const destImageDiv = document.querySelector(".destination-container__left--image")
+const destNavTitle = document.querySelector(".destination-container__left--title");
+const destImageDiv = document.querySelector(".destination-container__left--image");
+const moonBtn = document.getElementById("moon-btn");
+const marsBtn = document.getElementById("mars-btn");
+const europaBtn = document.getElementById("europa-btn");
+const titanBtn = document.getElementById("titan-btn");
+
+// variables
+let moonActive = true;
+let marsActive = false;
+let europaActive = false;
+let titanActive = false;
+
+// event listeners
+
+moonBtn.addEventListener("click", () => {
+  moonActive = true;
+  marsActive = false;
+  europaActive = false;
+  titanActive = false;
+  console.log("moon button")
+})
+
+marsBtn.addEventListener("click", () => {
+  moonActive = false;
+  marsActive = true;
+  europaActive = false;
+  titanActive = false;
+  console.log("mars button")
+})
 
 
-
+// moondata
 const handleMoonData = (data) => {
-  createImage(data);
-}
-const handleMarsData = (data) => {
-  createImage(data);
-}
-const handleEuropaData = (data) => {
-  createImage(data);
-}
-const handleTitanData = (data) => {
-  createImage(data);
+  if(moonActive) {
+    createImage(data);
+  }
 }
 
+// marsdata
+const handleMarsData = (data) => {
+  if(marsActive) {
+    createImage(data);
+  }
+}
+
+// europa data
+const handleEuropaData = (data) => {
+  if(europaActive) {
+    createImage(data);
+  }
+}
+
+// titan data
+const handleTitanData = (data) => {
+  if(titanActive) {
+    createImage(data);
+  }
+}
+
+
+// creating destination image
 const createImage = (data) => {
   const destImage = document.createElement("img");
   destImage.setAttribute("src", `${data.images.webp}`);
