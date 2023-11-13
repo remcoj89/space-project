@@ -84,7 +84,8 @@ header {
   .nav-list .nav-item {
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
     .nav-list .nav-item__link {
       font-family: "Barlow Condensed", sans-serif;
       font-size: 1.6rem;
@@ -137,8 +138,11 @@ header {
 
 #dest-body {
   background-image: url("../../assets/destination/background-destination-desktop.jpg");
-  height: 100vh;
-  position: relative; }
+  height: 100vh; }
+
+header {
+  position: relative;
+  z-index: 3; }
 
 #main-destination {
   position: absolute;
@@ -148,7 +152,8 @@ header {
   display: flex;
   align-items: flex-end;
   width: 80%;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 1; }
 
 .destination-left {
   width: 50%;

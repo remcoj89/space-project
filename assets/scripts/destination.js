@@ -19,7 +19,7 @@ const handleDestinationClick = (destination) => {
   setActiveButton(`${destination}-btn`);
   destinationData();
 };
-""
+
 destinationButtons.forEach((button) => {
   button.addEventListener("click", () => {
     handleDestinationClick(button.id.replace("-btn", ""));
@@ -65,9 +65,9 @@ const createHeading = (data) => {
 
 const createContent = (data) => {
   destDescription.textContent = data.description;
-  destContentDiv.appendChild(destDescription);
   distance.textContent = data.distance
   time.textContent = data.travel
+  destContentDiv.appendChild(destDescription);
 };
 
 // Initial data load

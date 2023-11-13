@@ -1,7 +1,11 @@
 #dest-body{
   background-image: url('../../assets/destination/background-destination-desktop.jpg');
   height: 100vh;
+}
+
+header {
   position: relative;
+  z-index: 3;
 }
 
 #main-destination {
@@ -13,6 +17,7 @@
   align-items: flex-end;
   width: 80%;
   height: 100vh;
+  z-index: 1;
 }
 
 
