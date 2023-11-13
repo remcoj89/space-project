@@ -1,132 +1,71 @@
-// Selectors
-const destImageDiv = document.querySelector(".destination-container__left--image");
-const moonBtn = document.getElementById("moon-btn");
-const marsBtn = document.getElementById("mars-btn");
-const europaBtn = document.getElementById("europa-btn");
-const titanBtn = document.getElementById("titan-btn");
+const destinationButtons = document.querySelectorAll(".destination-btn");
+const destImageDiv = document.querySelector(".destination-left--image");
+const destContentDiv = document.querySelector(".destination-content");
 
-// Variables
-let moonActive = true;
-let marsActive = false;
-let europaActive = false;
-let titanActive = false;
+let activeDestination = "moon";
 
-// Event listeners
-moonBtn.addEventListener("click", () => {
-  moonActive = true;
-  marsActive = false;
-  europaActive = false;
-  titanActive = false;
-  moonBtn.classList.add('btn-active');
-  marsBtn.classList.remove('btn-active');
-  europaBtn.classList.remove('btn-active');
-  titanBtn.classList.remove('btn-active');
+const setActiveButton = (buttonId) => {
+  destinationButtons.forEach((button) => {
+    button.classList.toggle('btn-active', button.id === buttonId);
+  });
+};
+
+const handleDestinationClick = (destination) => {
+  activeDestination = destination;
+  setActiveButton(`${destination}-btn`);
   destinationData();
+};
+
+destinationButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    handleDestinationClick(button.id.replace("-btn", ""));
+  });
 });
 
-marsBtn.addEventListener("click", () => {
-  moonActive = false;
-  marsActive = true;
-  europaActive = false;
-  titanActive = false;
-  moonBtn.classList.remove('btn-active');
-  marsBtn.classList.add('btn-active');
-  europaBtn.classList.remove('btn-active');
-  titanBtn.classList.remove('btn-active');
-  destinationData();
-});
-
-europaBtn.addEventListener("click", () => {
-  moonActive = false;
-  marsActive = false;
-  europaActive = true;
-  titanActive = false;
-  moonBtn.classList.remove('btn-active');
-  marsBtn.classList.remove('btn-active');
-  europaBtn.classList.add('btn-active');
-  titanBtn.classList.remove('btn-active');
-  destinationData();
-});
-
-titanBtn.addEventListener("click", () => {
-  moonActive = false;
-  marsActive = false;
-  europaActive = false;
-  titanActive = true;
-  moonBtn.classList.remove('btn-active');
-  marsBtn.classList.remove('btn-active');
-  europaBtn.classList.remove('btn-active');
-  titanBtn.classList.add('btn-active');
-  destinationData();
-});
-
-// Get json data
 const destinationData = async () => {
   try {
     const response = await fetch('../data.json');
     const data = await response.json();
-    const moonData = data.destinations.find(destination => destination.name === "Moon");
-    const marsData = data.destinations.find(destination => destination.name === "Mars");
-    const europaData = data.destinations.find(destination => destination.name === "Europa");
-    const titanData = data.destinations.find(destination => destination.name === "Titan");
+    const activeData = data.destinations.find(destination => destination.name.toLowerCase() === activeDestination);
 
-    // Clear existing images
     destImageDiv.textContent = "";
+    destContentDiv.textContent = "";
 
-    // Handle data based on active flags
-    if (moonActive) {
-      handleMoonData(moonData);
-    } else if (marsActive) {
-      handleMarsData(marsData);
-    } else if (europaActive) {
-      handleEuropaData(europaData);
-    } else if (titanActive) {
-      handleTitanData(titanData);
+    if (activeData) {
+      handleDestinationData(activeData);
+    } else {
+      console.error(`${activeDestination} data not available`);
     }
   } catch (error) {
     console.error("Error fetching or parsing data:", error);
   }
 };
 
-// Handle data functions
-const handleMoonData = (data) => {
-  if (data) {
-    createImage(data);
-  } else {
-    console.error("Moon data not available");
-  }
+const handleDestinationData = (data) => {
+  createImage(data);
+  createHeading(data);
+  createContent(data);
 };
 
-const handleMarsData = (data) => {
-  if (data) {
-    createImage(data);
-  } else {
-    console.error("Mars data not available");
-  }
-};
-
-const handleEuropaData = (data) => {
-  if (data) {
-    createImage(data);
-  } else {
-    console.error("Europa data not available");
-  }
-};
-
-const handleTitanData = (data) => {
-  if (data) {
-    createImage(data);
-  } else {
-    console.error("Titan data not available");
-  }
-};
-
-// Create destination image
 const createImage = (data) => {
   const destImage = document.createElement("img");
   destImage.setAttribute("src", `${data.images.webp}`);
   destImage.classList.add("dest-image");
   destImageDiv.appendChild(destImage);
+};
+
+const createHeading = (data) => {
+  const heading1 = document.createElement("h1");
+  heading1.textContent = data.name;
+  heading1.classList.add("heading-1");
+  destContentDiv.appendChild(heading1);
+};
+
+const createContent = (data) => {
+  const destDescription = document.createElement("p");
+  destDescription.textContent = data.description;
+  destDescription.classList.add("body-text");
+  destContentDiv.appendChild(destDescription);
 };
 
 // Initial data load
