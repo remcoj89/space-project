@@ -48,30 +48,30 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    .heading-3{
+    .destination-heading-3{
     @include  Heading-3;
     color: $white;
     }
-    .heading-2{
+    .destination-heading-2{
       @include Heading-2;
       color: $white;
     }
-    .heading-1{
+    .destination-heading-1{
       @include Heading-1;
       color: $white;
     }
 
-    .sub-heading-1 {
+    .destination-sub-heading-1 {
       @include Subheading-1;
       color: $white;
     }
 
-    .sub-heading-2 {
+    .destination-sub-heading-2 {
       @include Subheading-2;
       color: $white;
       opacity: .5;
     }
-    .body-text {
+    .destination-body-text {
       @include Bodytext;
       color: $white;
       opacity: .5;

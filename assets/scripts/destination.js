@@ -1,6 +1,10 @@
 const destinationButtons = document.querySelectorAll(".destination-btn");
 const destImageDiv = document.querySelector(".destination-left--image");
 const destContentDiv = document.querySelector(".destination-content");
+const heading1 = document.querySelector(".destination-heading-2");
+const destDescription = document.querySelector(".destination-body-text");
+const distance = document.getElementById("distance");
+const time = document.getElementById("time");
 
 let activeDestination = "moon";
 
@@ -15,7 +19,7 @@ const handleDestinationClick = (destination) => {
   setActiveButton(`${destination}-btn`);
   destinationData();
 };
-
+""
 destinationButtons.forEach((button) => {
   button.addEventListener("click", () => {
     handleDestinationClick(button.id.replace("-btn", ""));
@@ -55,17 +59,15 @@ const createImage = (data) => {
 };
 
 const createHeading = (data) => {
-  const heading1 = document.createElement("h1");
   heading1.textContent = data.name;
-  heading1.classList.add("heading-1");
   destContentDiv.appendChild(heading1);
 };
 
 const createContent = (data) => {
-  const destDescription = document.createElement("p");
   destDescription.textContent = data.description;
-  destDescription.classList.add("body-text");
   destContentDiv.appendChild(destDescription);
+  distance.textContent = data.distance
+  time.textContent = data.travel
 };
 
 // Initial data load

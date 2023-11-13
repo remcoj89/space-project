@@ -181,34 +181,34 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
-  .destination-right .heading-3 {
+  .destination-right .destination-heading-3 {
     font-family: "Bellefair", serif;
     font-size: 5.6rem;
     color: white; }
-  .destination-right .heading-2 {
+  .destination-right .destination-heading-2 {
     font-family: "Bellefair", serif;
     font-size: 10rem;
     color: white; }
-  .destination-right .heading-1 {
+  .destination-right .destination-heading-1 {
     font-family: "Bellefair", serif;
     font-weight: 400;
     font-size: 15rem;
     line-height: normal;
     color: white; }
-  .destination-right .sub-heading-1 {
+  .destination-right .destination-sub-heading-1 {
     font-family: "Bellefair", serif;
     font-size: 2.8rem;
     letter-spacing: 4.75;
     color: #d0d6f9;
     line-height: normal;
     color: white; }
-  .destination-right .sub-heading-2 {
+  .destination-right .destination-sub-heading-2 {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.4rem;
     letter-spacing: 2.35;
     color: white;
     opacity: .5; }
-  .destination-right .body-text {
+  .destination-right .destination-body-text {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 2.7;
