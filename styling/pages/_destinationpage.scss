@@ -3,21 +3,6 @@
   height: 100vh;
 }
 
-header {
-  z-index: 3;
-}
-
-.title{
-  width: 80%;
-  margin: 0 auto;
-  @include Subheading-1;
-  &--number{
-    @include Subheading-1;
-    font-weight: bold;
-    margin-right: 1.6rem;
-    color: rgba(255, 255, 255, 0.445);
-  }
-}
 
 
   .destination--image{

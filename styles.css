@@ -138,30 +138,57 @@ header {
     opacity: 1;
     border-bottom: solid 3px white; }
 
-#dest-body {
-  background-image: url("../../assets/destination/background-destination-desktop.jpg");
-  height: 100vh; }
-
-header {
-  z-index: 3; }
-
-.title {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Bellefair", serif;
-  font-size: 2.8rem;
-  letter-spacing: 4.75;
-  color: #d0d6f9;
-  line-height: normal; }
-  .title--number {
+.crew-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .crew-div .crew-function {
     font-family: "Bellefair", serif;
     font-size: 2.8rem;
     letter-spacing: 4.75;
     color: #d0d6f9;
     line-height: normal;
-    font-weight: bold;
-    margin-right: 1.6rem;
-    color: rgba(255, 255, 255, 0.445); }
+    text-transform: uppercase;
+    color: white;
+    opacity: .5;
+    margin-bottom: 1.8rem; }
+  .crew-div .crew-name {
+    font-family: "Bellefair", serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 3.6rem; }
+  .crew-div .crew-description {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 2.7;
+    line-height: 3.2rem;
+    color: #d0d6f9; }
+
+.crew-nav-bar {
+  width: 40%;
+  display: flex;
+  justify-content: space-between; }
+  .crew-nav-bar .crew-nav-btn {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    opacity: .5;
+    cursor: pointer; }
+  .crew-nav-bar .crew-btn-active {
+    opacity: 1; }
+
+.crew-image {
+  flex-shrink: 0;
+  position: absolute;
+  bottom: -12%;
+  height: 100%; }
+
+#dest-body {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  height: 100vh; }
 
 .destination--image {
   margin: 0 auto; }
@@ -240,16 +267,31 @@ header {
 
 .container {
   display: flex;
-  justify-content: space-between;
   position: absolute;
   bottom: 8%;
   left: 10%;
   right: 10%;
   height: 65vh; }
   .container__left {
-    width: 45%;
+    width: 50%;
     height: 100%;
     position: relative; }
+    .container__left .title {
+      width: 80%;
+      font-family: "Bellefair", serif;
+      font-size: 2.8rem;
+      letter-spacing: 4.75;
+      color: #d0d6f9;
+      line-height: normal; }
+      .container__left .title--number {
+        font-family: "Bellefair", serif;
+        font-size: 2.8rem;
+        letter-spacing: 4.75;
+        color: #d0d6f9;
+        line-height: normal;
+        font-weight: bold;
+        margin-right: 1.6rem;
+        color: rgba(255, 255, 255, 0.445); }
     .container__left .flex-box {
       display: flex;
       flex-direction: column;
@@ -259,7 +301,7 @@ header {
     width: 40%;
     min-height: 50vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     position: relative; }
 
 .heading-3 {
