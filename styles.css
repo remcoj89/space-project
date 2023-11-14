@@ -183,7 +183,6 @@ header {
 .crew-image {
   flex-shrink: 0;
   position: absolute;
-  bottom: -12%;
   height: 100%; }
 
 #dest-body {
@@ -301,7 +300,7 @@ header {
     width: 40%;
     min-height: 50vh;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     position: relative; }
 
 .heading-3 {
