@@ -21,17 +21,17 @@ header {
 
 
   .destination--image{
-    margin: auto;
-    height: 70%;
-    width: 70%;
+    margin: 0 auto;
     .dest-image {
-      width: 100%;
+      height: 100%;
     }
   }
   .destination{
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
 
     .destination-heading-3{
     @include  Heading-3;

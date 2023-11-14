@@ -164,16 +164,16 @@ header {
     color: rgba(255, 255, 255, 0.445); }
 
 .destination--image {
-  margin: auto;
-  height: 70%;
-  width: 70%; }
+  margin: 0 auto; }
   .destination--image .dest-image {
-    width: 100%; }
+    height: 100%; }
 
 .destination {
   width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: absolute;
+  bottom: 0; }
   .destination .destination-heading-3 {
     font-family: "Bellefair", serif;
     font-size: 5.6rem;
@@ -228,24 +228,39 @@ header {
 .btn-div {
   position: absolute; }
 
+.content {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+
 .main {
   width: 100%;
   margin: 0 auto;
-  height: 70vh; }
+  height: 80vh; }
 
 .container {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 6rem;
+  bottom: 8%;
   left: 10%;
-  right: 10%; }
+  right: 10%;
+  height: 65vh; }
   .container__left {
-    width: 45%; }
-  .container__right {
     width: 45%;
+    height: 100%;
+    position: relative; }
+    .container__left .flex-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%; }
+  .container__right {
+    width: 40%;
+    min-height: 50vh;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
 
 .heading-3 {
   font-family: "Bellefair", serif;

@@ -8,24 +8,36 @@
 .main {
     width: 100%;
     margin: 0 auto;
-    height: 70vh;
+    height: 80vh;
 }
   
 .container{
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 6rem;
+    bottom: 8%;
     left: 10%;
     right: 10%;
-
-  &__left{
+    height: 65vh;
+    
+    &__left{
       width: 45%;
+      height: 100%;
+      position: relative;
+      
+      .flex-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
   }
   &__right{
-      width: 45%;
+      width: 40%;
+      min-height: 50vh;
       display: flex;
       justify-content: center;
+      position: relative;
   }
 }
 
