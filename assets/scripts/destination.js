@@ -1,5 +1,5 @@
 const destinationButtons = document.querySelectorAll(".destination-btn");
-const destImageDiv = document.querySelector(".destination-left--image");
+const destImageDiv = document.querySelector(".destination--image");
 const destContentDiv = document.querySelector(".destination-content");
 const heading1 = document.querySelector(".destination-heading-2");
 const destDescription = document.querySelector(".destination-body-text");

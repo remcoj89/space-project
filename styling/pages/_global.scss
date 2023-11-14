@@ -2,3 +2,43 @@
 @import './technologypage';
 @import './destinationpage';
 @import './homepage';
+
+
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    height: 70vh;
+}
+  
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6rem;
+    left: 10%;
+    right: 10%;
+
+  &__left{
+      width: 45%;
+  }
+  &__right{
+      width: 45%;
+      display: flex;
+      justify-content: center;
+  }
+}
+
+
+.heading-3{
+    @include  Heading-3;
+    color: $white;
+  }
+  .heading-1{
+    @include Heading-1;
+    color: $white;
+  }
+  .body-text {
+    @include Bodytext;
+    color: $white;
+  }

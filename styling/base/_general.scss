@@ -14,5 +14,7 @@ body{
     background: #0B0D17;
     box-sizing: border-box;
     background-size: cover;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

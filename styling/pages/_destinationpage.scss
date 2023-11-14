@@ -4,54 +4,34 @@
 }
 
 header {
-  position: relative;
   z-index: 3;
 }
 
-#main-destination {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  right: 10%;
-  display: flex;
-  align-items: flex-end;
+.title{
   width: 80%;
-  height: 100vh;
-  z-index: 1;
+  margin: 0 auto;
+  @include Subheading-1;
+  &--number{
+    @include Subheading-1;
+    font-weight: bold;
+    margin-right: 1.6rem;
+    color: rgba(255, 255, 255, 0.445);
+  }
 }
 
 
-
-.destination-left{
-    width: 50%;
-    height :75vh;
-    display: flex;
-    flex-direction: column;
-
-    &--title{
-      @include Subheading-1;
-    }
-
-    &--number{
-      @include Subheading-1;
-      font-weight: bold;
-      margin-right: 1.6rem;
-      color: rgba(255, 255, 255, 0.445);
-    }
-
-    &--image{
-      margin: auto;
-      .dest-image {
-        width: 100%;
-      }
+  .destination--image{
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    .dest-image {
+      width: 100%;
     }
   }
-  .destination-right{
-    width: 40%;
-    height: 65vh;
+  .destination{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 
     .destination-heading-3{
     @include  Heading-3;
