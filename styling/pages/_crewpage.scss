@@ -1,3 +1,7 @@
+.flex-box {
+  padding-bottom: 8%;
+}
+
 .crew-div{
     width: 100%;
     display: flex;
@@ -8,14 +12,14 @@
         text-transform: uppercase;
         color: $white;
         opacity: .5;
-        // margin-bottom: 1.8rem;
+        margin-bottom: 1.8rem;
     }
 
     .crew-name{
         @include Heading-4;
         text-transform: uppercase;
         color: $white;
-        // margin-bottom: 3.6rem;
+        margin-bottom: 3.6rem;
     }
 
     .crew-description{
@@ -44,5 +48,5 @@
 }
 
 .crew-image{
-  width: 50%;
+  overflow: hidden;
 }

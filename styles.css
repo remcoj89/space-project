@@ -138,6 +138,9 @@ header {
     opacity: 1;
     border-bottom: solid 3px white; }
 
+.flex-box {
+  padding-bottom: 8%; }
+
 .crew-div {
   width: 100%;
   display: flex;
@@ -150,12 +153,14 @@ header {
     line-height: normal;
     text-transform: uppercase;
     color: white;
-    opacity: .5; }
+    opacity: .5;
+    margin-bottom: 1.8rem; }
   .crew-div .crew-name {
     font-family: "Bellefair", serif;
     font-size: 3.2rem;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    margin-bottom: 3.6rem; }
   .crew-div .crew-description {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.8rem;
@@ -179,7 +184,7 @@ header {
     opacity: 1; }
 
 .crew-image {
-  width: 50%; }
+  overflow: hidden; }
 
 #dest-body {
   background-image: url("../../assets/destination/background-destination-desktop.jpg");
@@ -266,7 +271,7 @@ header {
 .content {
   position: absolute;
   width: 100%;
-  bottom: 0; }
+  bottom: 8%; }
 
 .main {
   width: 100%;
@@ -276,7 +281,7 @@ header {
 .container {
   display: flex;
   position: absolute;
-  bottom: 8%;
+  bottom: 0%;
   left: 10%;
   right: 10%;
   height: 65vh; }
@@ -308,8 +313,7 @@ header {
   .container__right {
     width: 50%;
     display: flex;
-    justify-content: center;
-    overflow: hidden; }
+    justify-content: center; }
 
 .heading-3 {
   font-family: "Bellefair", serif;
