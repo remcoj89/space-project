@@ -3,8 +3,6 @@
   height: 100vh;
 }
 
-
-
   .destination--image{
     margin: 0 auto;
     .dest-image {
@@ -15,15 +13,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
-
-<<<<<<< HEAD
-
   }
-  &__right{
-    width: 50%;
-    height: 50vh;
+
     .detination-nav{
       display: flex;
       width: 100%;
@@ -33,11 +24,8 @@
         text-decoration: none;
       }
     }
-    width: 50%;
-    .heading-3{
-=======
+
     .destination-heading-3{
->>>>>>> b69a7794ea810f5daa44c1607930214bc3a5168f
     @include  Heading-3;
     color: $white;
     }
@@ -80,7 +68,5 @@
         width: 50%;
         gap: 1.6rem;
       }
-      
-    }
-  }
 
+    }
