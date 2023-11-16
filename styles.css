@@ -125,7 +125,16 @@ header {
         height: 40%;
         width: 50%; }
   .destination-container__right {
+    width: 50%;
+    height: 50vh;
     width: 50%; }
+    .destination-container__right .detination-nav {
+      display: flex;
+      width: 100%; }
+      .destination-container__right .detination-nav--link {
+        font-size: 3rem;
+        color: white;
+        text-decoration: none; }
     .destination-container__right .heading-3 {
       font-family: "Bellefair", serif;
       font-size: 5.6rem;
