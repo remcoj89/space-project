@@ -4,38 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+
   <title>Destination</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-     <!-- main bg flex image 100vh-->
-     <main>
-      <header>
-          <div class="nav-bar__left">
-              <img id="logo" src="../assets/shared/logo.svg" alt="">
-              <hr class="line">
-          </div>
-          <div class="nav-bar__right">
-              <ul class="nav-list">
-                  <li class="nav-item"><a href="../index.html"class="nav-item__link"><span class="nav-item__link--number">00</span>HOME</a></li>
-                  <li class="nav-item"><a href="./destination.html"class="nav-item__link"><span class="nav-item__link--number">01</span>DESTINATION</a></li>
-                  <li class="nav-item active"><a href="./crew.html"class="nav-item__link"><span class="nav-item__link--number">02</span>CREW</a></li>
-                  <li class="nav-item"><a href="./technology.html"class="nav-item__link"><span class="nav-item__link--number">03</span>Technology</a></li>
-              </ul>
-          </div>
-      </header>
-      <div class="container">
-          <!-- Content  -->
-          <div class="container__left">
-             <h1>Crew page</h1>
-          </div>
-          <!-- Button -->
-          <div class="container__right">
-          </div>
+<body id="dest-body">
+    <!-- main bg flex image 100vh-->
+    <header>
+      <div class="nav-bar__left">
+        <img id="logo" src="../assets/shared/logo.svg" alt="">
+        <hr class="line">
       </div>
-  </main>
+      <div class="nav-bar__right">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html"class="nav-item__link"><span class="nav-item__link--number">00</span>HOME</a></li>
+          <li class="nav-item"><a href="./destination.html"class="nav-item__link"><span class="nav-item__link--number">01</span>DESTINATION</a></li>
+          <li class="nav-item active"><a href="./crew.html"class="nav-item__link"><span class="nav-item__link--number">02</span>CREW</a></li>
+          <li class="nav-item"><a href="./technology.html"class="nav-item__link"><span class="nav-item__link--number">03</span>Technology</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="container__left">
+          <div class="flex-box">
+            <h2 class="title"><span class="title--number">02</span>CREW</h2>
+            <div class="crew-div">
+                <h3 class="crew-function">mission specialist</h3>
+                <h1 class="crew-name">mark shuttleworth</h1>
+                <p class="crew-description">Mark Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. 
+                  Shuttleworth became the first South African to travel to space as a space tourist
+                </p>
+              </div>
+              <div class="crew-nav-bar">
+                <button class="crew-nav-btn crew-btn-active"></button>
+                <button class="crew-nav-btn"></button>
+                <button class="crew-nav-btn"></button>
+                <button class="crew-nav-btn"></button>
+              </div>
+          </div>
+        </div>
+        <div class="container__right">
+            <div class="crew-image">
+                <img src="../assets/crew/image-mark-shuttleworth.webp" alt="crew image">
+            </div>
+        </div>
+      </div> 
+
+    </main>
   <!-- end main -->
-  <script src="index.js"></script>
-  <script src="index.js"></script>
+  <script src="../index.js"></script>
+  <script src="../assets/scripts/crew.js"></script>
 </body>
 </html>

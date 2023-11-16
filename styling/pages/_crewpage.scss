@@ -1,0 +1,52 @@
+.crew-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+
+    .crew-function{
+        @include  Subheading-1;
+        text-transform: uppercase;
+        color: $white;
+        opacity: .5;
+        margin-bottom: 1.8rem;
+    }
+
+    .crew-name{
+        @include Heading-4;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 3.6rem;
+    }
+
+    .crew-description{
+        @include Bodytext
+    }
+}
+
+.crew-nav-bar{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    .crew-nav-btn{
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        opacity: .5;
+        cursor: pointer;
+    }
+
+    .crew-btn-active{
+        opacity: 1;
+    }
+}
+
+.crew-image{
+    flex-shrink: 0;
+    position:absolute;
+    height: 100%;
+}

@@ -2,3 +2,65 @@
 @import './technologypage';
 @import './destinationpage';
 @import './homepage';
+
+
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+}
+  
+.container{
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    right: 10%;
+    height: 65vh;
+    
+    &__left{
+      width: 50%;
+      height: 100%;
+      position: relative;
+    
+      .title{
+        width: 80%;
+        @include Subheading-1;
+        &--number{
+          @include Subheading-1;
+          font-weight: bold;
+          margin-right: 1.6rem;
+          color: rgba(255, 255, 255, 0.445);
+        }
+      }
+      
+      .flex-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+  }
+  &__right{
+      width: 40%;
+      min-height: 50vh;
+      display: flex;
+      justify-content: center;
+      position: relative;
+  }
+}
+
+
+.heading-3{
+    @include  Heading-3;
+    color: $white;
+  }
+  .heading-1{
+    @include Heading-1;
+    color: $white;
+  }
+  .body-text {
+    @include Bodytext;
+    color: $white;
+  }
